@@ -2331,3 +2331,42 @@ img {
         padding: 1.5rem;
     }
 }
+
+
+.concept-image-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        height: 30rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .concept-image-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        img:nth-child(2) {
+            display: none;
+        }
+
+        img:nth-child(3) {
+            width: 80%;
+        }
+    }
+}
+
+.concept-image-slicer {
+    width: 1rem;
+    /*height: 80%;*/
+    margin: 2rem;
+    border-right: 1px solid var(--neon-cyan);
+}
