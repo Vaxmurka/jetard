@@ -466,6 +466,12 @@ img {
     flex-direction: row;
 }
 
+@media (max-width: 400px) {
+    .hero-inner {
+        flex-direction: column;
+    }
+}
+
 .hero-content {
     position: relative;
     z-index: 10;
