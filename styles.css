@@ -230,6 +230,11 @@ img {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 163, 255, 0.5);
     color: var(--text-primary);
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 .btn-secondary:hover {
@@ -289,8 +294,8 @@ img {
 }
 
 .nav-logo {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 1.25rem;
+    /*font-family: 'Orbitron', sans-serif;*/
+    font-size: 1.5rem;
     background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1082,7 +1087,7 @@ img {
 }
 
 .newsletter-content {
-    max-width: 42rem;
+    /*max-width: 42rem;*/
     margin: 0 auto;
     text-align: center;
 }
@@ -2232,6 +2237,15 @@ img {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: neonGlow 2s ease-in-out infinite;
+}
+
+.cta-title2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan), var(--neon-magenta));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .cta-description {
