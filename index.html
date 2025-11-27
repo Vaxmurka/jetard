@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jetard - Система роботизированного сервиса для ВСМ</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-container">
+    <div class="nav-content">
+      <a href="#" class="nav-logo">Jetard</a>
+
+      <div class="nav-links">
+        <a href="#services" class="nav-link">Функции</a>
+        <a href="#portfolio" class="nav-link">Применение</a>
+        <a href="#technologies" class="nav-link">Технологии</a>
+        <a href="#about" class="nav-link">О проекте</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </div>
+
+      <button class="btn-primary nav-cta">Узнать больше</button>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#services" class="mobile-link">Функции</a>
+      <a href="#portfolio" class="mobile-link">Применение</a>
+      <a href="#technologies" class="mobile-link">Технологии</a>
+      <a href="#about" class="mobile-link">О проекте</a>
+      <a href="#contact" class="mobile-link">Контакты</a>
+      <button class="btn-primary mobile-cta">Узнать больше</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="particles" id="particles"></div>
+  
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text ">Инновационная роботизированная система</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="title-line space_ranger">Проводник будущего</span>
+        <span class="title-line gradient-text neon-glow space_ranger">Jetard</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Робот-стюард Jetard - это проверка документов, распознавание лиц, доставка товаров и многое другое. А ведь это только начало...
+      </p>
+
+      <div class="hero-buttons">
+        <button class="btn-primary btn-large">
+          Смотреть демо
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+        <button class="btn-secondary btn-large">Технические детали</button>
+      </div>
+
+<!--      <div class="hero-stats">-->
+<!--        <div class="stat-item">-->
+<!--          <div class="stat-value">360°</div>-->
+<!--          <div class="stat-label">Обзор пространства</div>-->
+<!--        </div>-->
+<!--        <div class="stat-item">-->
+<!--          <div class="stat-value">17</div>-->
+<!--          <div class="stat-label">Месяцев окупаемости</div>-->
+<!--        </div>-->
+<!--        <div class="stat-item">-->
+<!--          <div class="stat-value">3</div>-->
+<!--          <div class="stat-label">Отсека для грузов</div>-->
+<!--        </div>-->
+<!--      </div>-->
+    </div>
+    <div class="hero-content">
+      <img src="image/main-image.png" alt="main-image" class="hero-image neon-glow">
+    </div>
+  </div>
+  
+
+  <div class="hero-gradient"></div>
+</section>
+
+<!-- Services Section -->
+<section class="section" id="services">
+  <div class="section-bg">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+  </div>
+
+  <!-- Тезисы -->
+  <section class="thesis-section" id="thesis">
+    <div class="section-bg">
+      <div class="glow-orb glow-orb-8"></div>
+      <div class="glow-orb glow-orb-9"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" style="border-color: #00F2FF;">
+          <span style="color: #00F2FF;">Ключевые преимущества</span>
+        </div>
+        <h2 class="section-title">Почему Jetard — это будущее</h2>
+        <p class="section-subtitle">
+          Инновационная система, сочетающая передовые технологии с практической реализацией
+        </p>
+      </div>
+
+      <div class="thesis-grid">
+        <div class="thesis-card" data-color="#00A3FF">
+          <div class="thesis-header">
+            <div class="thesis-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h3 class="thesis-title space_ranger">Полностью собственная разработка</h3>
+          </div>
+          <div class="thesis-glow"></div>
+        </div>
+
+        <div class="thesis-card" data-color="#00F2FF">
+          <div class="thesis-header">
+            <div class="thesis-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="thesis-title space_ranger">Низкая стоимость прототипа</h3>
+          </div>
+          <div class="thesis-glow"></div>
+        </div>
+
+        <div class="thesis-card" data-color="#C700FF">
+          <div class="thesis-header">
+            <div class="thesis-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="thesis-title space_ranger">Мультифункциональность</h3>
+          </div>
+          <div class="thesis-glow"></div>
+        </div>
+
+        <div class="thesis-card" data-color="#00A3FF">
+          <div class="thesis-header">
+            <div class="thesis-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="3" y1="9" x2="21" y2="9"></line>
+                <line x1="9" y1="21" x2="9" y2="9"></line>
+              </svg>
+            </div>
+            <h3 class="thesis-title space_ranger">Уникальный форм-фактор</h3>
+          </div>
+          <div class="thesis-glow"></div>
+        </div>
+
+        <div class="thesis-card" data-color="#00F2FF">
+          <div class="thesis-header">
+            <div class="thesis-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="thesis-title space_ranger">Реальный прототип</h3>
+          </div>
+          <div class="thesis-glow"></div>
+        </div>
+
+        <div class="thesis-card" data-color="#C700FF">
+          <div class="thesis-header">
+            <div class="thesis-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="thesis-title space_ranger">Для федеральных проектов</h3>
+          </div>
+          <div class="thesis-glow"></div>
+        </div>
+      </div>
+
+      <div class="thesis-cta">
+        <div class="cta-content">
+          <h3>Готовы к внедрению будущего?</h3>
+          <p>Jetard — это не концепт, а работающее решение для автоматизации сервиса на железнодорожном транспорте</p>
+          <div class="cta-buttons">
+            <button class="btn-primary btn-large">Запросить презентацию</button>
+            <button class="btn-secondary btn-large">Техническая документация</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Замена поводника -->
+  <section class="features-section" id="features">
+    <div class="section-bg">
+      <div class="glow-orb glow-orb-10"></div>
+      <div class="glow-orb glow-orb-11"></div>
+      <div class="glow-orb glow-orb-12"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge" style="border-color: #00F2FF;">
+          <span style="color: #00F2FF;">Ключевые преимущества</span>
+        </div>
+        <h2 class="section-title">Почему Jetard — это прорыв</h2>
+        <p class="section-subtitle">
+          Инновационная система, которая переопределяет стандарты сервиса на железнодорожном транспорте
+        </p>
+      </div>
+
+      <!-- Блок 1: Замена проводника -->
+      <div class="feature-block" data-color="#00A3FF">
+        <div class="feature-header">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="feature-title-content">
+            <h3 class="feature-title space_ranger">Полная замена проводника</h3>
+            <div class="feature-badge">Окупаемость 14 месяцев</div>
+          </div>
+        </div>
+
+        <div class="feature-tags">
+          <span class="feature-tag">Голосовое общение</span>
+          <span class="feature-tag">Проверка документов</span>
+          <span class="feature-tag">Распознавание лиц</span>
+          <span class="feature-tag">Приём заказов</span>
+          <span class="feature-tag">Доставка продукции</span>
+          <span class="feature-tag">Выдача планшетов</span>
+          <span class="feature-tag">Информационные услуги</span>
+          <span class="feature-tag">Комплексная безопасность</span>
+          <span class="feature-tag">Интеграция с РЖД</span>
+          <span class="feature-tag">Централизованное управление</span>
+          <span class="feature-tag highlight">Партия 1000 штук</span>
+        </div>
+      </div>
+
+      <!-- Технические особенности -->
+      <div class="feature-block" data-color="#00F2FF">
+        <div class="feature-header">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+          </div>
+          <div class="feature-title-content">
+            <h3 class="feature-title space_ranger">Технические инновации</h3>
+            <div class="feature-badge">Узкий корпус 28 см</div>
+          </div>
+        </div>
+
+        <div class="feature-tags">
+          <span class="feature-tag">Большие универсальные контейнеры</span>
+          <span class="feature-tag">Контроль доступа к продукции</span>
+          <span class="feature-tag">Специальная подвеска против падений</span>
+          <span class="feature-tag">Свободное перемещение в любом направлении</span>
+          <span class="feature-tag">Поворот головы по двум осям</span>
+          <span class="feature-tag">Автономная навигация по поезду</span>
+          <span class="feature-tag">Автоматическое планирование действий</span>
+          <span class="feature-tag">Кроссплатформенный интерфейс</span>
+          <span class="feature-tag highlight">Разработано на открытых платформах</span>
+        </div>
+      </div>
+
+      <!-- Перспективы и концепт -->
+      <div class="feature-block" data-color="#C700FF">
+        <div class="feature-header">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="feature-title-content">
+            <h3 class="feature-title space_ranger">Будущее и перспективы</h3>
+            <div class="feature-badge">Внедрение в 2028 году</div>
+          </div>
+        </div>
+
+        <div class="feature-content-grid">
+          <div class="content-column">
+            <h4 class="content-subtitle">Сотрудничество</h4>
+            <div class="feature-tags">
+              <span class="feature-tag">РЖД</span>
+              <span class="feature-tag">Топовые ВУЗы</span>
+            </div>
+          </div>
+
+          <div class="content-column">
+            <h4 class="content-subtitle">Текущие задачи</h4>
+            <div class="feature-tags">
+              <span class="feature-tag">SLAM на основе компьютерного зрения</span>
+              <span class="feature-tag">Специализированный LLM голосовой ассистент</span>
+            </div>
+          </div>
+
+          <div class="content-column">
+            <h4 class="content-subtitle">Новый концепт</h4>
+            <div class="feature-tags">
+              <span class="feature-tag">Футуристичный дизайн</span>
+              <span class="feature-tag">Многофункциональный сенсорный дисплей</span>
+              <span class="feature-tag">Увеличенное свободное пространство</span>
+              <span class="feature-tag">Модульное наполнение</span>
+              <span class="feature-tag">Универсальная робо-рука</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-highlights">
+          <div class="highlight-item">
+            <span class="highlight-badge">УНИВЕРСАЛЬНОСТЬ</span>
+            <span class="highlight-text">ПОДХОДИТ ДЛЯ ЛЮБОГО БИЗНЕСА</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-badge">НАДЕЖНОСТЬ</span>
+            <span class="highlight-text">СОТРУДНИК, У КОТОРОГО ВСЕГДА ХОРОШЕЕ НАСТРОЕНИЕ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- Добавьте эту секцию после предыдущих блоков -->
+<section class="support-team-section">
+  <div class="section-bg">
+    <div class="glow-orb glow-orb-13"></div>
+    <div class="glow-orb glow-orb-14"></div>
+  </div>
+
+  <div class="container">
+    <!-- Блок поддержки -->
+    <div class="support-block">
+      <div class="support-content">
+        <div class="support-badges">
+          <span class="support-badge" style="background: rgba(0, 163, 255, 0.1); border-color: rgba(0, 163, 255, 0.3); color: var(--neon-blue);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            При поддержке специалистов РЖД и ВСМ
+          </span>
+          <span class="support-badge" style="background: rgba(0, 242, 255, 0.1); border-color: rgba(0, 242, 255, 0.3); color: var(--neon-cyan);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            Положительные отзывы от высшего руководства РЖД
+          </span>
+        </div>
+
+        <div class="support-grid">
+          <div class="support-item">
+            <div class="support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <div class="support-text">
+              <h4>Федеральный уровень</h4>
+              <p>Неоднократно представлен федеральным министрам, правительству и другим высокопоставленным лицам</p>
+            </div>
+          </div>
+
+          <div class="support-item">
+            <div class="support-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                <polyline points="17 6 23 6 23 12"></polyline>
+              </svg>
+            </div>
+            <div class="support-text">
+              <h4>Успешные испытания</h4>
+              <p>Прошел успешные испытания в нескольких поездах в реальных условиях эксплуатации</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Блок команды -->
+    <div class="team-block">
+      <div class="team-header">
+        <h2 class="team-title">Наша команда</h2>
+        <p class="team-subtitle">Талантливые разработчики и инженеры, создающие будущее робототехники</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">
+            <div class="avatar-placeholder" style="background: linear-gradient(135deg, #00A3FF, #00F2FF);"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="member-name">Егор Кандрушин</h3>
+            <p class="member-role">Lead Developer & AI Engineer</p>
+            <div class="member-skills">
+              <span class="skill-tag">Tech Lead</span>
+              <span class="skill-tag">Python Backend Dev</span>
+              <span class="skill-tag">AI Engineer</span>
+            </div>
+            <p class="member-bio">Разработка систем компьютерного зрения и нейросетей для автономной навигации</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <div class="avatar-placeholder" style="background: linear-gradient(135deg, #00F2FF, #C700FF);"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="member-name">Михаил Быстров</h3>
+            <p class="member-role">Сексуальный мальчик</p>
+            <div class="member-skills">
+              <span class="skill-tag">Сборка и настройка</span>
+              <span class="skill-tag">3D моделирование</span>
+              <span class="skill-tag">Электроника</span>
+            </div>
+            <p class="member-bio">Проектирование механических систем и электроники робота-стюарда</p>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <div class="team-avatar">
+            <div class="avatar-placeholder" style="background: linear-gradient(135deg, #C700FF, #00A3FF);"></div>
+          </div>
+          <div class="team-info">
+            <h3 class="member-name">Никита Румянцев</h3>
+            <p class="member-role">Full-Stack Developer & UX</p>
+            <div class="member-skills">
+              <span class="skill-tag">Web Development</span>
+              <span class="skill-tag">UI/UX Design</span>
+              <span class="skill-tag">System Architecture</span>
+            </div>
+            <p class="member-bio">Создание интерфейсов управления и системной архитектуры проекта</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-showcase">
+        <h3 class="projects-title">Другие проекты команды</h3>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-icon" style="background: rgba(0, 163, 255, 0.1);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+              </svg>
+            </div>
+            <h4>AutoNav System</h4>
+            <p>Система автономной навигации для складских помещений</p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon" style="background: rgba(0, 242, 255, 0.1);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h4>FaceID Pro</h4>
+            <p>Биометрическая система идентификации для корпоративного использования</p>
+          </div>
+
+          <div class="project-card">
+            <div class="project-icon" style="background: rgba(199, 0, 255, 0.1);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              </svg>
+            </div>
+            <h4>Smart Delivery</h4>
+            <p>Платформа умной доставки для ритейл-сетей</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="partnership-cta">
+        <div class="cta-glow"></div>
+        <div class="cta-content">
+          <h2 class="cta-title">МЫ ИЩЕМ ПАРТНЕРОВ И НОВЫЕ ПРОЕКТЫ</h2>
+          <p class="cta-description">Готовы к сотрудничеству в области робототехники, AI и инновационных решений для бизнеса</p>
+          <div class="cta-buttons">
+            <button class="btn-primary btn-large">
+              Стать партнером
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 9l6 6-6 6"></path>
+                <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
+              </svg>
+            </button>
+            <button class="btn-secondary btn-large">Обсудить проект</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer" id="contact">
+  <div class="footer-divider"></div>
+  <div class="section-bg">
+    <div class="glow-orb glow-orb-6"></div>
+    <div class="glow-orb glow-orb-7"></div>
+  </div>
+
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3 class="footer-logo">Jetard</h3>
+        <p class="footer-description">
+          Инновационная система роботизированного сервиса для высокоскоростных железнодорожных магистралей. Проект создан в рамках конкурса «Высший пилотаж».
+        </p>
+        <div class="footer-contacts">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00A3FF" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>г. Тольятти, Самарская область</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00A3FF" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+              <path d="M2 17l10 5 10-5"></path>
+              <path d="M2 12l10 5 10-5"></path>
+            </svg>
+            <span>Кванториум-63 регион</span>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#00A3FF" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span>Быстров М., Кандрушин Е., Румянцев Н.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">О проекте</h4>
+        <ul>
+          <li><a href="#services">Функции</a></li>
+          <li><a href="#portfolio">Применение</a></li>
+          <li><a href="#technologies">Технологии</a></li>
+          <li><a href="#">Команда</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-title">Документация</h4>
+        <ul>
+          <li><a href="https://disk.yandex.ru/i/FJ88G8tRGzAbHg" target="_blank">Демо-видео</a></li>
+          <li><a href="https://disk.yandex.ru/d/q5cRYRGsSEkB3Q" target="_blank">3D-модели</a></li>
+          <li><a href="https://github.com/Vaxmurka/RobotSteward" target="_blank">GitHub (Web)</a></li>
+          <li><a href="https://github.com/TheMrKan/TrainStuart" target="_blank">GitHub (Python)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="newsletter">
+      <div class="newsletter-content">
+        <h3>Экономическое обоснование</h3>
+        <p>Срок окупаемости робота-стюарда при партии 1000 штук составляет всего 17 месяцев. Себестоимость с вендинговым автоматом — 828 800 рублей. Один робот заменяет проводника с зарплатой 80 000 руб/месяц.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2025 Jetard. Проект команды Кванториум-63. Все права защищены.</p>
+      <div class="social-links">
+        <a href="https://github.com/Vaxmurka/RobotSteward" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+        </a>
+        <a href="https://disk.yandex.ru/i/FJ88G8tRGzAbHg" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="23 7 16 12 23 17 23 7"></polygon>
+            <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+          </svg>
+        </a>
+        <a href="https://disk.yandex.ru/d/q5cRYRGsSEkB3Q" target="_blank" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+            <polyline points="13 2 13 9 20 9"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
