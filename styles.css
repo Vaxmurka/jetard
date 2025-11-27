@@ -10,6 +10,10 @@
     src: url('fonts/spaceranger-rus.otf') format('opentype');
 }
 
+a {
+    text-decoration: none;
+}
+
 :root {
     /* Color Palette */
     --dark-bg: #0D0D0D;
@@ -24,7 +28,7 @@
     --border-color: rgba(255, 255, 255, 0.1);
 
     /* Spacing */
-    --section-padding: 6rem;
+    --section-padding: 3rem;
 }
 
 html {
@@ -205,6 +209,15 @@ img {
 .btn-primary {
     background: linear-gradient(135deg, var(--neon-blue), var(--neon-cyan));
     color: var(--text-primary);
+
+    p {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.btn-gradient {
+    width: 80%;
 }
 
 .btn-primary:hover {
@@ -2059,6 +2072,11 @@ img {
     font-weight: bold;
     color: white;
     transition: all 0.3s ease;
+    background-size: cover;
+}
+
+.avatar-nikita {
+    background-image: image("image/nikita.jpg");
 }
 
 .team-card:hover .avatar-placeholder {
@@ -2231,6 +2249,10 @@ img {
 @media (max-width: 768px) {
     .support-block {
         padding: 2rem;
+    }
+
+    .hero-inner {
+        flex-direction: column;
     }
 
     .support-badges {
