@@ -1960,7 +1960,7 @@ img {
 
 .support-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     gap: 2rem;
 }
 
@@ -2044,12 +2044,22 @@ img {
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    justify-items: center;
     margin-bottom: 4rem;
+
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*gap: 2rem;*/
+    /*margin-bottom: 4rem;*/
 }
 
 .team-card {
+    width: 100%;
+    min-width: 300px;
+
     position: relative;
     padding: 2rem;
     background: var(--dark-bg-card);
@@ -2061,6 +2071,17 @@ img {
     align-items: center;
     text-align: center;
 }
+
+/*@media (min-width: 900px) {*/
+/*    .team-card {*/
+/*        flex-basis: 300px;*/
+/*        flex-grow: 0;   !* Запрещаем растягиваться, чтобы сохранить размер как у других *!*/
+/*        flex-shrink: 1; !* Разрешаем сжиматься на мобильных *!*/
+
+/*        width: 100%;*/
+/*        max-width: 400px;*/
+/*    }*/
+/*}*/
 
 .team-card:hover {
     transform: translateY(-0.5rem);
@@ -2265,6 +2286,12 @@ img {
     flex-wrap: wrap;
 }
 
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
     .support-block {
@@ -2299,6 +2326,11 @@ img {
     .team-grid {
         grid-template-columns: 1fr;
     }
+
+    /*.team-card:nth-child(odd):last-child {*/
+    /*    width: 100%;*/
+    /*    grid-column: span;*/
+    /*}*/
 
     .projects-grid {
         grid-template-columns: 1fr;
@@ -2343,7 +2375,13 @@ img {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1230px) {
+    .concept-image-content img {
+        height: 24rem;
+    }
+}
+
+@media (max-width: 1000px) {
     .concept-image-content {
         flex-direction: column;
         justify-content: center;
@@ -2369,4 +2407,74 @@ img {
     /*height: 80%;*/
     margin: 2rem;
     border-right: 1px solid var(--neon-cyan);
+}
+
+/* Стили для кнопки резюме в команде */
+.team-card {
+    position: relative;
+    padding: 2rem;
+    background: var(--dark-bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* Добавляем отступ снизу для кнопки */
+    padding-bottom: 5rem; /* Увеличиваем отступ снизу */
+}
+
+/* Контейнер для основной информации команды */
+.team-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Занимает всё доступное пространство */
+}
+
+/* Контейнер для кнопки резюме */
+.resume-button-container {
+    position: absolute;
+    bottom: 1.5rem; /* Фиксированное расстояние от нижнего края */
+    left: 0;
+    right: 0;
+    padding: 0 2rem; /* Отступы по бокам как у карточки */
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Стили для самой кнопки резюме */
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: rgba(26, 26, 26, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 163, 255, 0.5);
+    border-radius: 0.5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.resume-button:hover {
+    border-color: var(--neon-blue);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 163, 255, 0.3);
+}
+
+.resume-button p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }
